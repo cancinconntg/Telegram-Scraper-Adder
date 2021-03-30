@@ -21,7 +21,6 @@ def banner():
 	
 	           Version : 1.01
 	{re}Subscribe Termux Professor on Youtube
-	{cy}www.youtube.com/c/TermuxProfessorYT
 	""")
 banner()
 print(gr+"[+] Installing requierments ...")
@@ -36,7 +35,7 @@ cpass.set('cred', 'id', xid)
 xhash = input(gr+"[+] enter hash ID : "+re)
 cpass.set('cred', 'hash', xhash)
 xphone = input(gr+"[+] enter phone number : "+re)
-cpass.set('cred', 'phone', xphone)
+cpass.set('cred', 'bot', xbot)
 setup = open('config.data', 'w')
 cpass.write(setup)
 setup.close()
